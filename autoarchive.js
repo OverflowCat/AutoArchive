@@ -9,6 +9,24 @@
 // @match	https://wayback.archive.org/web/*
 // @match	http://web.archive.org/web/*
 // @match	https://web.archive.org/web/*
+// @exclude	http://archive.vn/*
+// @exclude	http://archive.is/*
+// @exclude	http://archive.fo/*
+// @exclude	https://github.com/*
+// @exclude https://pan.baidu.com/*
+// @exclude https://t.co/*
+// @exclude https://diigo.com
+// @exclude https://*.telegram.org/*
+// @exclude https://mastodon.social/web/notifications
+// @exclude https://liker.social/web/notifications
+// @exclude https://*.google.*/*
+// @exclude https://*.*.google.com/*
+// @exclude http://*.google.*.*/*
+// @exclude https://*.youtube.com/*
+// @exclude https://*.cloudflare.com/*
+// @exclude https://www.grammarly.com/*
+// @exclude https://qiandao.today/*
+
 // @grant	GM_xmlhttpRequest
 // @run-at document-start
 // ==/UserScript==
@@ -48,7 +66,7 @@
     }, false);
 
     //////////////////////////
-    CHANGES WENT HERE.
+    // CHANGES WENT HERE.
     //////////////////////////
     var u = location.href;
 
